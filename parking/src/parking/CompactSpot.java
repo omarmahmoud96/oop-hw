@@ -2,8 +2,10 @@ package parking;
 
 public class CompactSpot extends ParkingSpot{
 
-	public CompactSpot() {
+	int spotNumber;
+	public CompactSpot(int spotNumber) {
 		// TODO Auto-generated constructor stub
+		this.spotNumber=spotNumber;
 	}
 
 }

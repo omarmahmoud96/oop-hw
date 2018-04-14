@@ -1,9 +1,11 @@
 package parking;
 
-public class RegularSpot {
+public class RegularSpot extends ParkingSpot {
+	int spotNumber;
 
-	public RegularSpot() {
+	public RegularSpot(int spotNumber) {
 		// TODO Auto-generated constructor stub
+		this.spotNumber = spotNumber;
 	}
 
 }
