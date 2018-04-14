@@ -44,16 +44,19 @@ public class Ticket {
 	}
 
 	public Ticket(String startTime,Vehicle vehicle) {
-		// TODO Auto-generated constructor stub
 		start_time = startTime ;
 		this.vehicle = vehicle ;
 		if(vehicle.getType().equals(Genre.regular)) {
-			parkingSpot = new RegularSpot(regularSpotCounter+1) ;
+			if(regularSpotCounter < regularSpotNumber) {
+				regularSpotCounter +=1;
+				parkingSpot = new RegularSpot(regularSpotCounter+1) ;
+			}
 		}
 		else {
-			parkingSpot = new CompactSpot(compactSpotCounter+1);
-		}
-		
-		
+			if(compactSpotCounter < compactSpotNumber) {
+				compactSpotCounter +=1;
+				parkingSpot = new CompactSpot(compactSpotCounter+1);
+			}
+		}	
 	}
 }
