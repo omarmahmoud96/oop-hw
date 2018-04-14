@@ -1,10 +1,8 @@
 package parking;
 
-public class Ticket {
+public class RegularSpot {
 
-	String start_time;
-
-	public Ticket() {
+	public RegularSpot() {
 		// TODO Auto-generated constructor stub
 	}
 
